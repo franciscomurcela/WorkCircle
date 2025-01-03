@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WorkCircle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='Css/index.css'>
+</head>
+<body style="background-color: black;">
+    <div style="width: 430px; height: 930px; position: relative; background: #212121; top: 0%;">
+        <img style="width: 1200px; height: 215px; left: -435px; top: 15px; position: absolute;" src="Images/WorkCircleLogo.png">
+        <div style="width: 430px; height: 430px; left: 0px; top: 500px; position: absolute; background: linear-gradient(0deg, #EFE2C2 0%, #EFE2C2 100%), linear-gradient(180deg, rgba(239, 226, 194, 0) 71%, rgba(0, 0, 0, 0.20) 100%); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-top-left-radius: 75px"></div>
+        <div id='text' style="width: 330px; height: 183px; left: 50px; top: 160px; position: absolute; color: black; color: #EFE3C2; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 500; word-wrap: break-word">Redefining the future of coworking - Virtually connecting professionals for enhanced productivity.</div>
+        <!-- Email -->
+        <div style="width: 310px; height: 80px; left: 55px; top: 537px; position: relative; background: #424242; border-radius: 40px; display: flex; justify-content: center; align-items: center;">
+            <input id='email' size="15" style="color: rgba(239, 226, 194, 0.90); outline: none; font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif; word-wrap: break-word; border: none; background-color: transparent;" placeholder="E-mail">
+        </div>
+        <!-- Password -->
+        <div style="width: 310px; height: 80px; left: 55px; top: 567px; position: relative; background: #424242; border-radius: 40px; display: flex; justify-content: center; align-items: center;">
+            <input id="password" type="password" size="15" style="color: rgba(239, 226, 194, 0.90); outline: none; font-size: 25px; font-family: Verdana, Geneva, Tahoma, sans-serif; word-wrap: break-word; border: none; background-color: transparent;" placeholder="Password">
+            <img type="button" style="cursor: pointer; width: 200px; height: 200px; top: -60px; left: 170px;" id="togglePassword" onclick="togglePasswordVisibility()" src="../Images/password-hide.png">
+        </div>
+        <!-- Register Button -->
+        <div id='blackbox' style="width: 330px; height: 55px; left: 50px; top: 757px; position: absolute; background: #424242; border-radius: 15px"></div>
+        <div onclick="login()" id="loginButton">
+            <p id="login">Login</p>
+        </div>
+        <a id='registerRedirect' href="HTML/register.html" style="width: 145px; height: 10px; left: 198px; top: 828px; position: absolute; text-align: center; color: black; font-size: 15px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 400; text-decoration: underline; word-wrap: break-word">Registar conta</a>
+        <div id='register' style="width: 145px; height: 17px; left: 65px; top: 831px; position: absolute; text-align: right; color: black; font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; word-wrap: break-word">Não tens conta?</div>
+    </div>
+    <script src='JS/login.js'></script>
+</body>

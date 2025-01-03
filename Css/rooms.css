@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+}
+
+.available{
+    width: 20px; 
+    height: 20px; 
+    left: 345px; 
+    top: 386px; 
+    position: absolute; 
+    background: #33FF00; 
+    border-radius: 9999px;
+}
+
+.occupied{
+    width: 20px; 
+    height: 20px; 
+    left: 345px; 
+    top: 386px; 
+    position: absolute; 
+    background: #33FF00; 
+    border-radius: 9999px;
+}
+
+.resource {
+    cursor: pointer;
+}

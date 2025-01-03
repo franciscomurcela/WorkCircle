@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WorkCircle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Css/temperature.css'>
+</head>
+<body style="background-color: black;" onload="getTemp()">
+  <div style="width: 430px; height: 932px; position: relative; background: #FFF7DF">
+    <div style="width: 430px; height: 89px; left: 0px; top: 843px; position: absolute; background: #EFE3C2"></div>
+    <div style="width: 430px; height: 93px; left: 0px; top: 0px; position: absolute; background: #EFE3C2"></div>
+    <a href="../index.html">
+      <img style="width: 59px; height: 63px; left: 16px; top: 14px; position: absolute" src="../Images/LogoBlack.png" />
+    </a>
+    <div style="width: 387px; height: 690px; left: 21px; top: 121px; position: absolute; background: #EFE3C2; border-radius: 40px"></div>
+    <div style="left: 169px; top: 58px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Definições</div>
+    <div id='roomID' style="left: 173px; top: 135px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Sala 120</div>
+    <div style="width: 150px; height: 0px; left: 141px; top: 168px; position: absolute; border: 1px black solid"></div>
+
+    <div>
+      <div style="width: 338px; height: 96px; left: 47px; top: 220px; position: absolute; background: #FFF7DF; border-radius: 34px"></div>
+      <div style="left: 84px; top: 262px; position: absolute; color: black; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Temperatura</div>
+      <div id='temp' style="left: 321px; top: 260px; position: absolute; color: black; font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif  ; font-weight: 800; word-wrap: break-word">20º</div>
+      <img style="width: 25px; height: 25px; left: 217px; top: 262px; position: absolute" src="../Images/tempIcon.png" /> <!--TempIcon-->
+      <img class='arrow' style="width: 25px; height: 25px; left: 321px; top: 290px; position: absolute" src="../Images/arrow.png" onclick="changeTemp(-1)"/> <!--Arrows-->
+      <img class='arrow' style="width: 25px; height: 25px; left: 346px; top: 248px; position: absolute; transform: rotate(-180deg); transform-origin: 0 0" src="../Images/arrow.png" onclick="changeTemp(1)"/>
+    </div>
+
+    <div>
+      <div style="width: 342px; height: 389px; left: 43px; top: 340px; position: absolute; background: #FFF7DF; border-radius: 34px"></div>
+      <div style="left: 179px; top: 410px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Acesso</div>
+      <img style="width: 200px; height: 204.44px; left: 115px; top: 492px; position: absolute" src="../Images/QRCode.png" />
+    </div>
+
+    <div>
+      <div id="endReservation" onclick="endReservation()" style="width: 342px; height: 40px; left: 43px; top: 740px; position: absolute; background: #FFF7DF; border-radius: 34px; text-align: center;font-size: 17px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word; padding-top: 15px;"> Terminar reserva</div>
+    </div>
+
+    <a href="menu.html">
+      <img style="width: 50px; height: 50px; left: 290px; top: 863px; position: absolute" src="../Images/HomeIcon.png" />
+    </a>
+    <a href="helpdesk.html">
+      <img style="width: 50px; height: 50px; left: 89px; top: 863px; position: absolute" src="../Images/HelpdeskIcon.png" />
+    </a>
+  </div>
+  <script>
+    document.getElementById('roomID').innerHTML = 'Sala ' + JSON.parse(localStorage.getItem('toReserve'));
+  </script>
+  <script src="../JS/access.js"></script>
+</body>
+</html>

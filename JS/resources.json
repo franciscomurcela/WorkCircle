@@ -1,0 +1,34 @@
+{
+    "resources" : [
+        {
+            "room" : 120 , 
+            "user" : " " ,
+            "available" : 0
+        },
+        {
+            "room" : 130 , 
+            "user" : " " ,
+            "available" : 0
+        },
+        {
+            "room" : 140 , 
+            "user" : " " ,
+            "available" : 0
+        },
+        {
+            "room" : 150 , 
+            "user" : " " ,
+            "available" : 0
+        },
+        {
+            "room" : 1 , 
+            "user" : " " ,
+            "available" : 0
+        },
+        {
+            "room" : 2 , 
+            "user" : " " ,
+            "available" : 0
+        }
+    ]
+}

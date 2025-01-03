@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>WorkCircle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../Css/reserve.css'>
+</head>
+<body style="background-color: black;">
+    <div style="width: 430px; height: 930px; position: relative; background: #FFF7DF">
+        <div style="width: 430px; height: 89px; left: 0px; top: 843px; position: absolute; background: #EFE3C2"></div>
+        <div style="width: 430px; height: 93px; left: 0px; top: 0px; position: absolute; background: #EFE3C2"></div>
+        <a href="../index.html">
+            <img style="width: 59px; height: 63px; left: 16px; top: 14px; position: absolute" src="../Images/LogoBlack.png" />
+        </a>
+        <div style="width: 387px; height: 690px; left: 21px; top: 121px; position: absolute; background: #EFE3C2; border-radius: 40px"></div>
+        <div style="left: 168px; top: 58px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Reservar</div>
+        <div id='roomID' style="left: 167px; top: 135px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word">Sala 120</div>
+        <div style="width: 150px; height: 0px; left: 141px; top: 168px; position: absolute; border: 1px black solid"></div>
+        <div>
+            <div style="width: 334px; height: 97px; left: 46px; top: 229px; position: absolute; background: #FFF7DF; border-radius: 34px"></div>
+            <input id='email' style="left: 75px; top: 267px; position: absolute; color: rgba(0, 0, 0, 0.50); font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word; border: none; background-color: transparent;" placeholder="E-mail">
+        </div>
+        
+        <div id="reserveButton">
+            <div style="width: 216px; height: 99px; left: 107px; top: 398px; position: absolute; background: #D12525; border-radius: 34px"></div>
+            <div style="left: 167px; top: 437px; position: absolute; color: black; font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 800; word-wrap: break-word" onclick="makeReservation()">Reservar</div>
+        </div>
+
+        <a href="menu.html">
+            <img style="width: 50px; height: 50px; left: 290px; top: 863px; position: absolute" src="../Images/HomeIcon.png" />
+        </a>
+        <a href="helpdesk.html">
+            <img style="width: 50px; height: 50px; left: 89px; top: 863px; position: absolute" src="../Images/HelpdeskIcon.png" />
+        </a>
+    </div>
+    <script src="../JS/reservation.js"></script>
+    <script>
+        document.getElementById('roomID').innerHTML = 'Sala ' + JSON.parse(localStorage.getItem('toReserve'));
+        document.getElementById('email').value= JSON.parse(localStorage.getItem('loggedUser'));
+    </script>
+</body>
